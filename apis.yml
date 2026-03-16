@@ -1,12 +1,21 @@
+aid: yarn
 name: YARN
 description: YARN is a fast, reliable package manager for JavaScript that was developed
   by Meta as an alternative to npm. It offers deterministic dependency resolution,
   offline caching, and parallel installation to provide faster and more consistent
   package management across development environments.
-url: null
+type: Index
+url: https://yarnpkg.com/
 tags:
-- YARN
+  - YARN
+  - Package Manager
+  - JavaScript
+  - Node.js
 created: '2025'
-modified: '2025'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
 common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
