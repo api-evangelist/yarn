@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/yarn/main/json-schema/yarn-package-schema.json",
+  "title": "YARN Package",
+  "description": "Schema representing a Node.js package as managed by YARN, based on the package.json structure.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Package name. Must be lowercase, URL-safe, and may be scoped (@scope/name).",
+      "pattern": "^(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+    },
+    "version": {
+      "type": "string",
+      "description": "Package version following Semantic Versioning (semver)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short human-readable description of the package"
+    },
+    "main": {
+      "type": "string",
+      "description": "Entry point of the package (CommonJS)"
+    },
+    "module": {
+      "type": "string",
+      "description": "ES Module entry point"
+    },
+    "exports": {
+      "description": "Package exports map defining public entry points",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object" }
+      ]
+    },
+    "scripts": {
+      "type": "object",
+      "description": "npm/yarn lifecycle scripts",
+      "additionalProperties": { "type": "string" }
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "Runtime dependencies",
+      "additionalProperties": { "type": "string" }
+    },
+    "devDependencies": {
+      "type": "object",
+      "description": "Development-only dependencies",
+      "additionalProperties": { "type": "string" }
+    },
+    "peerDependencies": {
+      "type": "object",
+      "description": "Peer dependencies expected to be provided by consumers",
+      "additionalProperties": { "type": "string" }
+    },
+    "optionalDependencies": {
+      "type": "object",
+      "description": "Optional dependencies that do not cause install failures if missing",
+      "additionalProperties": { "type": "string" }
+    },
+    "workspaces": {
+      "description": "Yarn workspaces glob patterns",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "packages": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      ]
+    },
+    "packageManager": {
+      "type": "string",
+      "description": "Specifies the expected package manager (e.g., yarn@4.1.0)"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier"
+    },
+    "repository": {
+      "type": "object",
+      "description": "Source code repository information",
+      "properties": {
+        "type": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Searchable keywords for the package",
+      "items": { "type": "string" }
+    },
+    "author": {
+      "description": "Package author",
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        }
+      ]
+    },
+    "engines": {
+      "type": "object",
+      "description": "Required Node.js and npm/yarn version constraints",
+      "additionalProperties": { "type": "string" }
+    },
+    "type": {
+      "type": "string",
+      "enum": ["module", "commonjs"],
+      "description": "Module type for .js files"
+    },
+    "private": {
+      "type": "boolean",
+      "description": "Prevents accidental publishing if true"
+    }
+  },
+  "required": ["name", "version"]
+}
