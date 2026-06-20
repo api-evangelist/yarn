@@ -8,7 +8,7 @@ description: >-
   API via @yarnpkg/core for building tools and plugins.
 type: Index
 url: https://github.com/yarnpkg/berry
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - JavaScript
   - Node.js
