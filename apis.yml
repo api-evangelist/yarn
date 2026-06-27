@@ -79,7 +79,7 @@ common:
     url: https://github.com/yarnpkg
   - type: GitHubRepository
     url: https://github.com/yarnpkg/berry
-  - type: SDK
+  - type: SDKs
     url: https://www.npmjs.com/package/yarn
   - type: ChangeLog
     url: https://github.com/yarnpkg/berry/blob/master/CHANGELOG.md
