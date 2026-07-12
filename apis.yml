@@ -67,6 +67,8 @@ apis:
         url: https://yarnpkg.com/getting-started/install
 
 common:
+  - type: DomainSecurity
+    url: security/yarn-domain-security.yml
   - type: Documentation
     url: https://yarnpkg.com/getting-started
   - type: GettingStarted
