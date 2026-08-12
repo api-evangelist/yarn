@@ -79,6 +79,9 @@ apis:
         url: https://yarnpkg.com/getting-started/install
 
 common:
+  - type: License
+    name: BSD-2-Clause
+    url: https://github.com/yarnpkg/berry/blob/master/LICENSE
   - type: DomainSecurity
     url: security/yarn-domain-security.yml
   - type: Documentation
