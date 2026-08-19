@@ -28,7 +28,7 @@ tags:
   - YARN
 created: '2025'
 modified: '2026-05-03'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: yarn:yarn-core-api
     name: YARN Core API
