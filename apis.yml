@@ -39,6 +39,11 @@ apis:
     humanURL: https://yarnpkg.com/api
     baseURL: https://yarnpkg.com
     tags:
+      - JavaScript
+      - Package Manager
+      - Plugin
+      - TypeScript
+    tags_raw:
       - API
       - JavaScript
       - Package Manager
