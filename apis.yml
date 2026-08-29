@@ -8,6 +8,18 @@ description: >-
   API via @yarnpkg/core for building tools and plugins.
 type: Index
 url: https://github.com/yarnpkg/berry
+deliveryModel:
+  model: self-hosted
+  license: BSD-2-Clause
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -84,6 +96,16 @@ apis:
         url: https://yarnpkg.com/getting-started/install
 
 common:
+  - type: IssueTracker
+    url: https://github.com/yarnpkg/berry/issues
+  - type: Releases
+    url: https://github.com/yarnpkg/berry/releases
+  - type: SecurityPolicy
+    url: https://github.com/yarnpkg/berry/blob/master/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/yarnpkg/berry/blob/master/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/yarnpkg/berry/blob/master/CONTRIBUTING.md
   - type: License
     name: BSD-2-Clause
     url: https://github.com/yarnpkg/berry/blob/master/LICENSE
