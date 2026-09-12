@@ -96,6 +96,8 @@ apis:
         url: https://yarnpkg.com/getting-started/install
 
 common:
+  - type: Website
+    url: https://www.yarnpkg.com/
   - type: IssueTracker
     url: https://github.com/yarnpkg/berry/issues
   - type: Releases
