@@ -53,7 +53,7 @@ apis:
     tags:
       - JavaScript
       - Package Manager
-      - Plugin
+      - Plugins
       - TypeScript
     tags_raw:
       - API
